@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Tokens globales que mantienen consistente la identidad azul de Respawn Seguro. */
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #10233d;
+  background: #f7faff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --ink: #10233d;
+  --muted: #66758c;
+  --blue: #2878e8;
+  --blue-deep: #0d2140;
+  --blue-soft: #e9f3ff;
+  --line: #dce6f1;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body { min-width: 320px; margin: 0; }
+button, input, select, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { color: #fff; background: #2878e8; }
