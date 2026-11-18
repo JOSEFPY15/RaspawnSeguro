@@ -1,10 +1,10 @@
+import LogoInteractivo from "./LogoInteractivo.jsx";
+
 function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-top section-wrap">
-        <a className="footer-brand" href="#inicio">
-          <img src="/img/respawn-seguro-logo.svg" alt="Respawn Seguro" />
-        </a>
+        <LogoInteractivo className="footer-brand" />
         <p>
           Cuida tu cuenta.
           <br />

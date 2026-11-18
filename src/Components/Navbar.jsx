@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LogoInteractivo from "./LogoInteractivo.jsx";
 
 // Cada enlace usa un ancla (id de sección) para saltar directamente a esa parte de la página.
 const links = [
@@ -22,14 +23,7 @@ function Navbar() {
   return (
     <header className="site-header">
       <nav className="nav-shell" aria-label="Navegación principal">
-        <a
-          className="brand"
-          href="#inicio"
-          onClick={closeMenu}
-          aria-label="Respawn Seguro, inicio"
-        >
-          <img src="/img/respawn-seguro-logo.svg" alt="Respawn Seguro" />
-        </a>
+        <LogoInteractivo className="brand" />
         <button
           className="menu-toggle"
           type="button"
