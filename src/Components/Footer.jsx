@@ -14,11 +14,22 @@ function Footer() {
           Volver arriba <span aria-hidden="true">↑</span>
         </a>
       </div>
+      <nav
+        className="footer-links section-wrap"
+        aria-label="Enlaces del pie de página"
+      >
+        <a href="#contacto">Contacto</a>
+        <a href="#redes-sociales">Redes sociales</a>
+        <a href="#aviso-privacidad">Aviso de privacidad</a>
+      </nav>
       <div className="footer-bottom section-wrap">
         <span>© 2026 Respawn Seguro</span>
         <span>Proyecto demostrativo de ciberseguridad gamer.</span>
         <a href="#aviso-privacidad">Privacidad</a>
       </div>
+      <p className="footer-credit section-wrap">
+        Página creada por <strong>Josef Alexander Sánchez Matinez</strong>
+      </p>
     </footer>
   );
 }

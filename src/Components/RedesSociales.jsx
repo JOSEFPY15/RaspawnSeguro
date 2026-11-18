@@ -10,6 +10,10 @@ function RedesSociales() {
         <h2>
           Nos vemos <span>en línea.</span>
         </h2>
+        <p className="social-note">
+          Perfiles de ejemplo; Respawn Seguro aún no tiene cuentas oficiales
+          vinculadas.
+        </p>
       </div>
       <div className="social-list">
         {socialNetworks.map((network) => (

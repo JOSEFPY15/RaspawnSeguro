@@ -1,3 +1,5 @@
+import Ubicacion from "./Ubicacion.jsx";
+
 function SobreNosotros() {
   return (
     <section
@@ -31,6 +33,7 @@ function SobreNosotros() {
         <span className="about-rule" />
         <span>Protección pensada para personas, no solo para sistemas.</span>
       </div>
+      <Ubicacion />
     </section>
   );
 }

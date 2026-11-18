@@ -34,6 +34,16 @@ function Clientes() {
           </article>
         ))}
       </div>
+      <div className="partner-note reveal">
+        <p className="eyebrow">
+          ALIANZAS POR EXPLORAR <span className="eyebrow-line" />
+        </p>
+        <p>
+          Posibles aliados estratégicos: organizaciones esports, comunidades de
+          streaming, equipos de moderación y proyectos de educación digital.
+          Esta lista no representa acuerdos vigentes.
+        </p>
+      </div>
     </section>
   );
 }

@@ -10,7 +10,6 @@ const links = [
   ["Galería", "#galeria"],
   ["Multimedia", "#multimedia"],
   ["Testimonios", "#testimonios"],
-  ["Ubicación", "#ubicacion"],
   ["Contacto", "#contacto"],
   ["Redes", "#redes-sociales"],
   ["Privacidad", "#aviso-privacidad"],

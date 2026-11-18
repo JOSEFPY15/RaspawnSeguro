@@ -12,7 +12,6 @@ import ServiciosProductos from "./Components/ServiciosProductos.jsx";
 import SiteEffects from "./Components/SiteEffects.jsx";
 import SobreNosotros from "./Components/SobreNosotros.jsx";
 import Testimonios from "./Components/Testimonios.jsx";
-import Ubicacion from "./Components/Ubicacion.jsx";
 
 // App reúne las secciones y define su orden de lectura en la página.
 function App() {
@@ -25,11 +24,10 @@ function App() {
         <SobreNosotros />
         <MisionVision />
         <ServiciosProductos />
-        <Multimedia />
         <Clientes />
         <Galeria />
+        <Multimedia />
         <Testimonios />
-        <Ubicacion />
         <Contacto />
         <RedesSociales />
         <AvisoPrivacidad />

@@ -2,31 +2,63 @@
 const images = [
   {
     file: "A1.jpeg",
-    alt: "Laptop gamer con escudo azul de protección en la pantalla",
+    alt: "Estación gamer con monitor, audífonos y escudo de ciberseguridad azul",
+    title: "Punto de partida",
+    category: "SETUP",
   },
   {
     file: "A2.jpeg",
-    alt: "Estación de streaming con micrófono, cámara y controles de privacidad",
+    alt: "Escritorio de streaming con micrófono, cámara y escudo de seguridad",
+    title: "Conexiones que inspiran",
+    category: "CREADORES",
   },
   {
     file: "A3.jpeg",
-    alt: "Grupo de gamers conectado dentro de un escudo digital",
+    alt: "Control gamer junto a un candado holográfico de seguridad",
+    title: "Juega con confianza",
+    category: "SEGURIDAD",
   },
-  { file: "A4.jpeg", alt: "Jugador con audífonos frente a su equipo de juego" },
+  {
+    file: "A4.jpeg",
+    alt: "Audífonos y controles gamer en una habitación azul",
+    title: "Tu espacio, tus reglas",
+    category: "SETUP",
+  },
   {
     file: "A5.jpeg",
-    alt: "Estudiantes utilizando tabletas en una actividad digital",
+    alt: "Laptop, monitor y teléfono con iconos de seguridad iluminados",
+    title: "Todo bajo control",
+    category: "TECNOLOGÍA",
   },
-  { file: "A6.jpeg", alt: "Manos usando un control de videojuegos" },
-  { file: "A7.jpeg", alt: "Streamer descansando durante una transmisión" },
+  {
+    file: "A6.jpeg",
+    alt: "Teléfono y tableta con verificación de seguridad holográfica",
+    title: "Protección en movimiento",
+    category: "CONEXIÓN",
+  },
+  {
+    file: "A7.jpeg",
+    alt: "Espacio gamer visto desde una silla frente a un monitor protegido",
+    title: "Listos para la partida",
+    category: "COMUNIDAD",
+  },
   {
     file: "A8.jpeg",
-    alt: "Ilustración de un gamer junto a un escudo de seguridad",
+    alt: "Teclado mecánico con iluminación azul y escudo holográfico",
+    title: "Cada tecla cuenta",
+    category: "HÁBITOS",
   },
-  { file: "A9.jpeg", alt: "Espacio gamer iluminado frente a una computadora" },
+  {
+    file: "A9.jpeg",
+    alt: "Red segura que conecta una laptop, un router y un control gamer",
+    title: "Una red más fuerte",
+    category: "CONEXIÓN",
+  },
   {
     file: "A10.jpeg",
-    alt: "Ilustración sobre amenazas digitales en los videojuegos",
+    alt: "Espacio de trabajo gamer con laptop, control y escudo azul",
+    title: "Diseña tu defensa",
+    category: "SETUP",
   },
 ];
 
@@ -60,7 +92,10 @@ function Galeria() {
                 <h2>Álbum gamer</h2>
               </span>
             </div>
-            <span className="album-count">{images.length} FOTOGRAFÍAS</span>
+            <div className="album-toolbar-meta">
+              <span className="album-count">{images.length} FOTOGRAFÍAS</span>
+              <span className="album-year">VOL. 01 / 2024</span>
+            </div>
           </header>
 
           {/* Cada hipervínculo abre la fotografía original en su tamaño completo. */}
@@ -70,7 +105,7 @@ function Galeria() {
 
               return (
                 <a
-                  className={`album-image-link${index === 0 ? " album-image-featured" : ""}`}
+                  className="album-image-link"
                   href={imagePath}
                   key={image.file}
                   target="_blank"
@@ -78,8 +113,16 @@ function Galeria() {
                   aria-label={`Abrir fotografía ${index + 1}: ${image.alt}`}
                 >
                   <img src={imagePath} alt={image.alt} loading="lazy" />
+                  <span className="album-image-shade" aria-hidden="true" />
                   <span className="album-image-number">
                     {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span className="album-image-copy">
+                    <span>{image.category}</span>
+                    <strong>{image.title}</strong>
+                  </span>
+                  <span className="album-image-open" aria-hidden="true">
+                    ↗
                   </span>
                 </a>
               );
@@ -87,7 +130,9 @@ function Galeria() {
           </div>
 
           <footer className="album-footer">
-            <span>Momentos del mundo gamer</span>
+            <span>
+              <b>RESPAWN / ARCHIVE</b> · Momentos del mundo gamer
+            </span>
             <span className="album-footer-status">
               <i /> Álbum completo
             </span>

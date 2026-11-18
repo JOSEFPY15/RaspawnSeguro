@@ -46,15 +46,17 @@ function Contacto() {
           Cuéntanos qué quieres proteger y te orientaremos sobre el siguiente
           paso.
         </p>
-        <a className="contact-email" href="mailto:hola@respawnseguro.example">
-          hola@respawnseguro.example <span aria-hidden="true">↗</span>
-        </a>
+        <p className="contact-email">
+          Envíanos tu consulta mediante el formulario.
+        </p>
         <small className="demo-note">
-          Correo de ejemplo para el proyecto escolar.
+          Al enviarlo, los campos se transmiten al servicio de Formspree
+          configurado para este proyecto.
         </small>
       </div>
       {/* Formulario conectado al endpoint de Formspree configurado arriba. */}
       <form
+        id="formulario-contacto"
         className="contact-form mx-auto max-w-2xl"
         action={FORM_ENDPOINT}
         method="post"
@@ -124,7 +126,7 @@ function Contacto() {
           {submitState === "error" &&
             "No se pudo enviar. Revisa tu conexión y que el endpoint de Formspree esté activo."}
           {submitState === "idle" &&
-            "Tus datos se enviarán al servicio de contacto configurado."}
+            "No incluyas contraseñas ni información sensible en el mensaje."}
         </p>
       </form>
     </section>

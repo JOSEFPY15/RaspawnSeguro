@@ -6,11 +6,11 @@ function Multimedia() {
           <p className="eyebrow">
             RECURSO MULTIMEDIA <span className="eyebrow-line" />
           </p>
-          <h3>
+          <h2>
             Una capa extra
             <br />
             <span>para tus cuentas.</span>
-          </h3>
+          </h2>
           <p>
             Video de YouTube Creators con recomendaciones para proteger un canal
             y activar la verificación en dos pasos.
@@ -26,7 +26,7 @@ function Multimedia() {
           </a>
         </div>
 
-        {/* Iframe multimedia: incorpora el reproductor de YouTube dentro de la página. */}
+        {/* Iframe multimedia: incorpora el reproductor de YouTube en la página. */}
         <div className="video-frame">
           <iframe
             src="https://www.youtube-nocookie.com/embed/5FQWAFaC-tY"
