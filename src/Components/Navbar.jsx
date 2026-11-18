@@ -9,7 +9,6 @@ const links = [
   ["Servicios", "#servicios"],
   ["Clientes", "#clientes"],
   ["Galería", "#galeria"],
-  ["Multimedia", "#multimedia"],
   ["Testimonios", "#testimonios"],
   ["Contacto", "#contacto"],
   ["Redes", "#redes-sociales"],

@@ -1,3 +1,5 @@
+import Multimedia from "./Multimedia.jsx";
+
 // Fotos disponibles en public/img; Vite las sirve con la ruta /img/.
 const images = [
   {
@@ -139,6 +141,7 @@ function Galeria() {
           </footer>
         </div>
       </div>
+      <Multimedia />
     </section>
   );
 }

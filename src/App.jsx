@@ -5,7 +5,6 @@ import Footer from "./Components/Footer.jsx";
 import Galeria from "./Components/Galeria.jsx";
 import Inicio from "./Components/Inicio.jsx";
 import MisionVision from "./Components/MisionVision.jsx";
-import Multimedia from "./Components/Multimedia.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import RedesSociales from "./Components/RedesSociales.jsx";
 import ServiciosProductos from "./Components/ServiciosProductos.jsx";
@@ -26,7 +25,6 @@ function App() {
         <ServiciosProductos />
         <Clientes />
         <Galeria />
-        <Multimedia />
         <Testimonios />
         <Contacto />
         <RedesSociales />
